@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">Xtreme Sports Store Survey Form</h1>
+        <p id="description">Please, answer these questions below to help us to improve our service.</p>
+    </header>
+
+    <main class="container">
+        <form action="" id="survey-form">
+
+            <div class="personal-info">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email" id="email-label">E-mail</label>
+                <input type="email" id="email" placeholder="Enter your best e-mail" required>
+
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" id="age" placeholder="Age" min="10" max="99">
+            </div>
+
+
+            <div class="personal-info">
+                <p>Did you receive the order at the deadline informed by the store?</p>
+                <select id="dropdown" required>
+                    <option disabled selected value>select...</option>
+                    <option value="before">Yes, it arrived even before the deadline.</option>
+                    <option value="at deadline">Yes, it arrived right at the deadline.</option>
+                    <option value="late">No, it arrived late.</option>
+                    <option value="not received">No, I didn't receive my order still.</option>
+                </select>
+            </div>
+
+            <div class="input-round">
+                <p>How easily did you find what you were looking for?</p>
+
+                <label for="easy">
+                    <input type="radio" name="find-difficulty" id="easy" value="easy" checked> Very easy
+                </label>
+
+                <label for="difficult">
+                    <input type="radio" name="find-difficulty" id="difficult" value="difficult"> Pretty hard
+                </label>
+            </div>
+
+            <div class="favorite-sports">
+                <p>Which of these sports do you like most?</p>
+
+                <label for="motocross"><input type="checkbox" name="motocross" id="motocross"
+                        value="motocross">Motocross</label>
+
+                <label for="mountain-biking"><input type="checkbox" name="mountain-biking" id="mountain-biking"
+                        value="mountain-biking">Mountain Biking</label>
+
+                <label for="skateboarding"><input type="checkbox" name="skateboarding" id="skateboarding"
+                        value="skateboarding">Skateboarding</label>
+
+                <label for="skydiving"><input type="checkbox" name="skydiving" id="skydiving"
+                        value="skydiving">Skydiving</label>
+
+                <label for="snowboarding"><input type="checkbox" name="snowboarding" id="snowboarding"
+                        value="snowboarding">Snowboarding</label>
+
+                <label for="surfing"><input type="checkbox" name="surfing" id="surfing" value="surfing">Surfing</label>
+            </div>
+
+            <div class="input-round">
+                <p>Would you recommend Xtreme Sports Store to a friend?</p>
+
+                <label for="yes">
+                    <input type="radio" name="recommendation" id="yes" value="yes" checked> Certainly
+                </label>
+
+                <label for="maybe">
+                    <input type="radio" name="recommendation" id="maybe" value="yes"> Maybe
+                </label>
+
+                <label for="no">
+                    <input type="radio" name="recommendation" id="no" value="yes"> Probably not
+                </label>
+            </div>
+
+            <div class="personal-info">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" cols="30" rows="10" placeholder="Type any comments here..."></textarea>
+            </div>
+
+            <div>
+                <button class="submit-button" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>Developed by Berger Lima &copy; 2023</p>
+        <a href="https://github.com/bergerlima" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://linkedin.com/in/bergerlima" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+    </footer>
+</body>
+
+</html>
